@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7fc">
+  <meta name="description" content="A personal apology for Iqra, with gratitude for her forgiveness and promises for our future.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Baby, I’m really sorry. With all my heart.</title>
+  <link rel="icon" href="letter.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<div class="welcome-overlay" id="welcome-overlay">
+  <div class="welcome-card">
+    <div class="welcome-icon" aria-hidden="true">🎧</div>
+    <h2 class="welcome-title">Before you begin…</h2>
+    <p class="welcome-text">Put on your headphones, baby.<br>This is best with music. ♡</p>
+    <button class="welcome-button" id="welcome-start" type="button">
+      <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>
+      I'm ready, start the music
+    </button>
+    <p class="welcome-skip-text">
+      <button class="welcome-skip" id="welcome-skip" type="button">Continue without music</button>
+    </p>
+  </div>
+</div>
+<a class="skip-link" href="#letter">Skip to my letter</a>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0L12 5.3l-.6-.7a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="16" rx="3" ry="2.5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.6 14.7A9 9 0 0 1 9.3 3.4a9 9 0 1 0 11.3 11.3Z"/></symbol>
+  <symbol id="i-envelope" viewBox="0 0 100 100"><rect x="9" y="23" width="82" height="60" rx="12" fill="#fff" stroke="#736197" stroke-width="3"/><path d="m12 27 38 31 38-31M12 79l28-29m48 29L60 50" fill="none" stroke="#b4a0dd" stroke-width="3" stroke-linejoin="round"/><path d="M50 70s-12-8-12-15c0-7 9-8 12-2 3-6 12-5 12 2 0 7-12 15-12 15Z" fill="#bca7e3"/></symbol>
+  <symbol id="i-bouquet" viewBox="0 0 120 130"><path d="m60 118-19-73m19 73 3-80m-3 80 23-65" fill="none" stroke="#65a58c" stroke-width="4" stroke-linecap="round"/><path d="M57 93C28 95 26 74 26 74c25-2 31 19 31 19Zm5-13c27 1 30-18 30-18-20-1-30 18-30 18Z" fill="#a0d7bf"/><g fill="#ddcff6" stroke="#ac95d7" stroke-width="1.5"><path d="M38 28c-15-16-29 8-12 14-18 10 3 28 12 11 9 18 29-2 12-11 19-9-1-28-12-14Z"/><path d="M72 39c-13-13-25 7-10 12-16 9 2 24 10 9 8 16 25-2 10-9 16-8 0-24-10-12Z"/></g><g fill="#f5b9cd" stroke="#df9eb5" stroke-width="1.5"><path d="M61 9C48-5 35 15 50 21c-16 8 2 25 11 9 8 16 26-2 10-9 17-8-1-25-10-12Z"/><path d="M91 19C78 5 65 25 80 31c-16 8 2 25 11 9 8 16 26-2 10-9 17-8-1-25-10-12Z"/></g><g fill="#fff6ce"><circle cx="38" cy="41" r="6"/><circle cx="72" cy="51" r="5"/><circle cx="61" cy="21" r="5"/><circle cx="91" cy="31" r="5"/></g><path d="m33 82 26 42 25-43-27 12Z" fill="#e9e2fa" stroke="#baa7df" stroke-width="2"/><path d="m45 106 28-7" stroke="#d798b2" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 120 100"><path d="M22 18h76a12 12 0 0 1 12 12v39a12 12 0 0 1-12 12H48L25 94V81h-3A12 12 0 0 1 10 69V30a12 12 0 0 1 12-12Z" fill="#d8f3e8" stroke="#78a991" stroke-width="2.5"/><path d="M34 40h50M34 52h40M34 64h25" stroke="#7cad96" stroke-width="4" stroke-linecap="round"/></symbol>
+  <symbol id="i-sprig" viewBox="0 0 100 120"><path d="M47 108c21-38 16-65 12-91" fill="none" stroke="#6d9f89" stroke-width="3" stroke-linecap="round"/><path d="M57 76C28 79 22 56 22 56c28-3 35 20 35 20Zm5-23c25 2 31-21 31-21-27-1-31 21-31 21ZM53 94C30 94 27 77 27 77c21-3 26 17 26 17Z" fill="#b8ddcb" stroke="#7dab94" stroke-width="1.5"/><g fill="#d9c8f1" stroke="#b19aca" stroke-width="1.4"><ellipse cx="58" cy="13" rx="8" ry="12"/><ellipse cx="47" cy="22" rx="11" ry="7" transform="rotate(30 47 22)"/><ellipse cx="69" cy="22" rx="11" ry="7" transform="rotate(-30 69 22)"/><ellipse cx="52" cy="32" rx="7" ry="10" transform="rotate(25 52 32)"/><ellipse cx="64" cy="32" rx="7" ry="10" transform="rotate(-25 64 32)"/></g><circle cx="58" cy="24" r="6" fill="#fff1c8"/></symbol>
+</defs></svg>
+<div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+<div class="floaties" id="floaties" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="For Iqra, back to the beginning"><span class="brand-heart"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>for Iqra<span class="brand-dot">.</span></a>
+  <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg><span>Pause motion</span></button>
+</header>
+<main id="main">
+  <section class="hero section" id="home" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="pill mint-pill"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> My apology. My promises. My love for you.</span>
+        <h1 id="hero-title">Baby, I’m really sorry.<br><span>With all my heart.</span></h1>
+        <p class="hero-lead">You’re the only one I love, babe.</p>
+        <p class="hero-description">I made a mistake, and I’m so ashamed of what I did. I’m so sorry, babe. I promise I will never repeat this mistake. No one can ever take your place in my heart.</p>
+        <p class="scribble hero-scribble">A little letter, just for you.</p>
+      </div>
+      <div class="letter-scene" aria-hidden="true">
+        <div class="scene-halo"></div>
+        <svg class="envelope-back" viewBox="0 0 500 460"><ellipse cx="252" cy="416" rx="203" ry="19" fill="#d4c8e7" opacity=".45"/><path d="M69 215 237 87q13-10 26 0l168 128v165H69Z" fill="#cbbbe8" stroke="#ac96ce" stroke-width="2"/><path d="m79 216 171-115 171 115" fill="#dcd0ef"/><path d="m424 91 6 15 15 5-15 5-6 15-5-15-15-5 15-5Z" fill="#c9b5e7"/><path d="m56 138 4 10 11 4-11 4-4 10-4-10-10-4 10-4Z" fill="#a6cfbb"/></svg>
+        <div class="paper-note"><span class="paper-to">a note for my baby</span><strong>Dear Iqra,</strong><p>For my baby,<br>with all my love.</p><span class="paper-line"></span><span class="paper-line short"></span><span class="paper-heart">♡</span></div>
+        <svg class="envelope-front" viewBox="0 0 500 460"><path d="M69 215 250 340 431 215v177q0 12-12 12H81q-12 0-12-12Z" fill="#e4daf5" stroke="#ac96ce" stroke-width="2"/><path d="m72 398 159-121q19-14 38 0l159 121" fill="#eee7f9" stroke="#bcabd6" stroke-width="2"/><path d="m77 228 100 69m246-69-100 69" stroke="#f9f5ff" stroke-width="2"/><circle cx="250" cy="325" r="31" fill="#b8a0d9" stroke="#a38ac8" stroke-width="2"/><circle cx="250" cy="325" r="25" fill="none" stroke="#dacbed" stroke-width="1.5"/><path d="M250 340s-16-11-16-21c0-10 12-12 16-4 4-8 16-6 16 4 0 10-16 21-16 21Z" fill="#f6efff"/><g transform="translate(3 266) rotate(-20 50 60)"><use href="#i-sprig" width="105" height="126"/></g></svg>
+        <span class="scene-caption">a note from me<br><span>to my favourite girl.</span></span>
+        <span class="scene-heart">♡</span>
+      </div>
+    </div>
+    <a class="hero-down" href="#first-words">Start at the beginning <span aria-hidden="true">↓</span></a>
+  </section>
+  <div class="letter-ribbon" aria-hidden="true"><span>FOR YOU, IQRA</span><span>♡</span><span>MY PROMISES</span><span>♡</span><span>ONLY YOU</span><span>♡</span><span>ALWAYS IN MY HEART</span></div>
+
+  <section class="section messages-section" id="first-words" aria-labelledby="messages-title">
+    <div class="split-width">
+      <div class="section-heading side-heading reveal"><span class="kicker">01 / WHAT I WANT TO SAY</span><h2 id="messages-title">Babe, I know<br><span>I made a mistake.</span></h2><p>I’ve thought about what I did. I regret it so much, and I’m really ashamed of it. I’m serious about changing and becoming better for you.</p><svg class="side-illustration" viewBox="0 0 120 100" aria-hidden="true"><use href="#i-chat"/></svg><p class="scribble">Let me say this properly.</p></div>
+      <div class="message-thread reveal" aria-label="A few words from me to you">
+        <div class="thread-heading"><span class="sender-dot" aria-hidden="true">♡</span><div><strong>me → you, baby</strong><span>something I’ve been thinking about</span></div></div>
+        <p class="message-bubble small-bubble">Hey, babe. There’s a little more I want to say.</p>
+        <p class="message-bubble">When we were apart, I became interested in someone else. I gave her gifts, went on dates and to the movies, and put effort into that connection. I regret those choices. It was a mistake, and I’m sorry about that.</p>
+        <p class="message-bubble mint-bubble">I made those decisions myself, so I take responsibility. I promise to stay committed to you, be in control of my choices, and never entertain an attraction to another girl.</p>
+        <span class="message-receipt">from me, honestly <span aria-hidden="true">♡</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section letter-section" id="letter" aria-labelledby="letter-title">
+    <div class="wide">
+      <div class="section-heading reveal"><span class="kicker">02 / A LITTLE MORE, FROM MY HEART</span><h2 id="letter-title">This means<br><span>a lot to me, baby.</span></h2><p>Read this in my voice.</p></div>
+      <article class="long-message reveal">
+        <div class="letter-header"><span class="sender-dot" aria-hidden="true">♡</span><div><strong>For my Iqra</strong><span>a letter I wanted you to have</span></div><svg class="letter-stamp" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-envelope"/></svg></div>
+        <div class="letter-body">
+          <p class="salutation">My baby,</p>
+          <p>I’m so sorry, Iqra. I keep thinking about everything, and I wish I could go back and make different choices. I regret what I did, and I accept that it was my mistake. I can’t undo it, but I can make things better for our future.</p>
+          <p>You were already going through a difficult time. When I think about you finding all of this out on top of everything else, I feel so much regret.</p>
+          <p><strong>You’ve forgiven me, babe, and that means a lot to me. I still want to apologise and make things better for our future. I’m taking all of this very seriously.</strong></p>
+          <p>You made me feel loved for the first time in my life. I will never forget that, or everything you’ve done for me. I’m grateful for the care you’ve shown me and the way you made me feel wanted. I wish I had shown more appreciation through my choices, and I want to treat that love with much more care.</p>
+          <p><strong>I promise I will never repeat this mistake. I won’t get close to another girl. I choose you, and I will be honest and faithful in the commitment I’m making to you.</strong></p>
+          <p>I also want you to feel my love in ordinary moments, babe. In the time I make for you. In remembering what matters to you. In listening when you’ve had a hard day. In showing care consistently.</p>
+          <p>I’m thinking seriously about the kind of partner I want to be for you: someone who thinks before acting, speaks honestly, and follows through. I know I’m responsible for making those changes myself. I want you to be able to feel the difference.</p>
+          <p>I’m looking forward to more of the simple things with you. Hearing about your day, laughing over something silly, making plans together, and feeling comfortable enough to talk about anything. I want to give those moments the attention they deserve, baby.</p>
+          <p class="letter-signature">With all my heart,<br><span>me. ♡</span></p>
+        </div>
+        <div class="letter-bottom"><span>Written for you, with love.</span><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section notes-section" aria-labelledby="notes-title">
+    <div class="wide notes-layout reveal">
+      <div class="section-heading side-heading"><span class="kicker">03 / THREE LITTLE NOTES</span><h2 id="notes-title">Just for you,<br><span>my love.</span></h2><p>A little reassurance and a few things I want you to know.</p><p class="scribble">Tap a note, babe.</p></div>
+      <div class="notes-stack">
+        <details class="little-note"><summary><span class="note-index">01</span><span>You’re the one I choose.</span><span class="note-plus" aria-hidden="true">+</span></summary><div class="note-body"><p>It’s you, babe. I love only you. You’re the person I want to give my love, time, and commitment to. I understand why you might need more than these words right now, and I will keep showing you what I mean through honest and consistent actions.</p><p class="note-hand">You matter so much to me.</p></div></details>
+        <details class="little-note"><summary><span class="note-index">02</span><span>You can tell me what’s on your mind.</span><span class="note-plus" aria-hidden="true">+</span></summary><div class="note-body"><p>If something is bothering you, tell me, baby. You can ask a question, explain what you need, or say that something doesn’t feel right. I’ll make time to hear you out and understand what you’re saying.</p><p class="note-hand">I want us to be able to talk openly.</p></div></details>
+        <details class="little-note"><summary><span class="note-index">03</span><span>Your happiness matters to me.</span><span class="note-plus" aria-hidden="true">+</span></summary><div class="note-body"><p>I want to know what you’re looking forward to, babe. The things you’d love to try, the plans you’re excited about, and the small things that make your day better. I want to support what matters to you and be someone you feel comfortable sharing it with.</p><p class="note-hand">I’m cheering for you, baby.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intentions-section" id="promises" aria-labelledby="intentions-title">
+    <div class="wide intentions-layout reveal">
+      <div class="intention-note"><span class="pill white-pill">FOR OUR FUTURE</span><svg viewBox="0 0 100 120" aria-hidden="true"><use href="#i-sprig"/></svg><p>More thought.<br>More care.<br><span>Real effort.</span></p><span class="scribble">in the little things, too.</span></div>
+      <div class="intentions-copy"><span class="kicker">04 / HOW I WILL FOLLOW THROUGH</span><h2 id="intentions-title">Here is what<br><span>I’ll work on.</span></h2><p>These are the changes I’m committing to in how I act.</p>
+        <ol class="intentions-list">
+          <li><h3>Keep clear boundaries.</h3><p>I’ll keep my interactions with other girls within respectful boundaries and stay faithful to you. I will take our commitment seriously in the choices I make.</p></li>
+          <li><h3>Pause and talk things through.</h3><p>When I feel confused or upset, I’ll slow down, think about the consequences, and talk to you before making decisions that affect us.</p></li>
+          <li><h3>Be honest and listen properly.</h3><p>I’ll answer your questions truthfully and hear you out without making excuses. I want us to understand each other clearly.</p></li>
+          <li><h3>Follow through on what I say.</h3><p>I’ll make time, keep the plans we agree on, and take care with the little things. You should be able to rely on my word.</p></li>
+          <li><h3>Own my mistakes without being asked.</h3><p>I’ll reflect on my actions, admit when I’ve got something wrong, and take the initiative to make it right. I’ll be responsible for my own growth.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section quiet-section" aria-labelledby="quiet-title">
+    <div class="quiet-stars" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>✧</span></div>
+    <div class="quiet-inner reveal"><div class="moon-badge"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></div><span class="kicker">05 / SOMETHING I WANT YOU TO KEEP</span><h2 id="quiet-title">Your place in<br><span>my heart is yours.</span></h2><p>You’re the only one I’ll keep forever in my heart, babe. Nobody else can be you or give me the love you’ve given me. That means more to me than I’ve always known how to say.</p><p>I want to understand you without you having to explain every little thing, baby. And if I miss something or get it wrong, please tell me. I’ll always listen to you and take the time to understand what you’re feeling.</p><p class="scribble">You’re my favourite girl. ♡</p></div>
+  </section>
+
+  <section class="section ending-section" aria-labelledby="ending-title"><div class="ending-inner reveal"><span class="pill white-pill">A LITTLE NOTE TO END ON</span><svg class="ending-art" viewBox="0 0 120 130" aria-hidden="true"><use href="#i-bouquet"/></svg><h2 id="ending-title">For our future,<br><span>with all my love.</span></h2><p class="ending-main">I’m serious about us, baby.</p><p class="ending-text">I want to make more happy memories with you and give you reasons to feel sure about us. I’m ready to put in that effort.</p><p class="ending-text">I’m looking forward to the things we’ll get to share, babe. The plans we’ll make, the good news we’ll celebrate, and the days that are special simply because we spent some of them together. I want to look back with you and feel happy about what we built.</p><p class="scribble">Sending you the softest hug.</p><a class="text-link" href="#letter">Back to my letter <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></section>
+</main>
+<footer class="site-footer"><a href="#home">for Iqra, from my heart <span aria-hidden="true">♡</span></a><span>Made with love, just for you.</span></footer>
+<aside class="music-player" aria-label="Optional music"><div class="record-icon" aria-hidden="true"><svg class="icon"><use href="#i-music"/></svg></div><div class="track-info"><span id="track-title">Lovesong — Adele</span><span id="music-status" role="status">A little music while you read.</span></div><div class="waveform" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><button class="music-play" id="music-play" type="button" aria-label="Play the song" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></button></aside>
+<audio id="audio-player" src="music.mp3" loop preload="auto"></audio>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>
